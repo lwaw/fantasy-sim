@@ -1,0 +1,436 @@
+/*html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    min-height: 100%;
+} */
+
+html, body{
+    margin: 0;
+
+    padding: 0;
+
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+input[type=button], button[type=submit], input[type=reset] {
+    background-color: #2F4F2F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type=text], input[type=number] {
+    border: 2px solid #2F4F2F;
+    border-radius: 4px;
+} 
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #2F4F2F;
+    border-radius: 4px;
+} 
+
+select {
+    width: auto;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+} 
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*horizontal line*/
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 100, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/*horizontal line*/
+hr.side {
+	margin-top:0;
+	margin-bottom:0;
+	border:0;
+	height:1px;
+	#background-color:black;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* remove underline from link */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.boxed {
+  	color: white;
+  	background-color: red;
+} 
+
+.boxedtot {
+	margin-left: auto;
+    margin-right: auto;
+	color: black;
+	width: 60%;
+	min-height: 900px;
+  	/*background-color: lightblue;*/
+  	background-color: #DCDCDC;
+  	padding: 0px;
+  	position: relative;
+} 
+
+.textbox {
+	color: black;
+	width: 100%;
+	overflow: auto;
+	min-width:100px;
+	border: 1px solid transparent;
+}
+
+.textbox2 {
+	color: black;
+	background-color: #ffffcc;
+	padding: 0px;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid black;
+}
+
+/* index */
+.indexbackground {
+	min-height: 100%;
+	width: 100%;
+	background-color: lightblue;
+}
+
+.indexformbox {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.indextextbox {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	border: 3px solid gold;
+	color: white;
+}
+
+.indextextbox2 {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+
+.indexlogobox {
+	height: 70%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+	overflow:visible;	
+}
+
+.cliffcastle-image {
+  background-image: url("../img/cliffcastle.jpg");
+  background-color: #cccccc;
+  background-attachment: scroll;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.flowercastle-image {
+  background-image: url("../img/flowercastle.jpg");
+  background-color: #cccccc;
+  background-attachment: scroll;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+.notificationbox {
+	height: 5%;
+	width: 5%;
+	margin-left: 5%;
+	margin-right: 0%;
+	margin-top: 0%;
+	overflow: auto;
+	position: relative;
+	overflow:visible;	
+	display: inline-block;
+	
+		 float: right;
+	 clear: right;
+}
+
+.notificationbox2 {
+	height: 100%;
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+	text-align: right;
+	display: inline-block;
+}
+
+.notificationbox3 {
+	height: 5%;
+	width: 35px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+	overflow: auto;
+	position: relative;
+	overflow:visible;	
+	display: inline-block;
+	align: right;
+}
+
+logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.invisiblebox {
+	visibility: hidden;
+}
+
+/* advertisement */
+.adbox {
+	color: black;
+	padding: 0px;
+	width: 20%;
+	height: 500px;
+	overflow: auto;
+	border: 1px solid black;
+	position: absolute;
+}
+
+.listbox {
+	color: black;
+	padding: 15px;
+	min-width:100px;
+	border: 1px solid #696969;
+}
+
+/*table*/
+#table1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table1 td, #table1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table1 tr:nth-child(even){background-color: #f2f2f2;}
+
+#table1 tr:hover {background-color: #FFA07A;}
+
+#table1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.h1 {
+    color: #9F8170;
+    font-family: Georgia;
+    font-size: 300%;
+    padding-left: 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+.t1 {
+    color: black;
+    font-family: Serif;
+    font-size: 100%;
+    padding-left: 5px;
+}
+
+/* alles op een line */
+.everythingOnOneLine {
+ display: inline;
+}
+
+.everythingOnOneLine2 {
+ display: inline;
+}
+
+/* chat */
+#chatbox {
+	height: 100%;
+	width: 100%;
+}
+
+.chatmessage {
+	width: 100%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+/* bottombar */
+.bottomblock {
+    overflow: hidden;
+    background-color: #2F4F2F;
+	margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+#block_container
+{
+    text-align:center;
+}
+#bloc1, #bloc2
+{
+    display:inline;
+}
+
+/* forum */
+.leftpart {
+    width: 70%;
+}
+ 
+.rightpart {
+    width: 30%;
+}
+
+.replybox {
+	background: #e6e6e6;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 25px;
+} 
+
+.bold {
+    color: black;
+    font-family: Serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.italic {
+    color: black;
+    font-family: Serif;
+    font-size: 100%;
+    font-style: italic;
+}
+
+/* home */
+.homebox {
+    padding: 0px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    border: 25px solid 2F4F2F;
+} 
+
+.homebox2 {
+    
+} 
+
+.map1 {
+	height: 1000px;
+	width: 100%;
+}
+
+/* accountinfo */
+.accountleft {
+    width: 30%;
+    float: left;
+} 
+
+.accountright {
+    width: 70%;
+    float: right;
+} 
+
+/*voeg scroll toe al te groot voor scherm*/
+.scroll {
+	
+}
+
+@media only screen and (max-width: 1400px) {
+	.scroll {
+		overflow: scroll;
+	}
+	
+	.boxedtot{
+		width: 100%;
+	}
+	
+	.bottomblock{
+		width: 100%;
+	}
+	
+	.indexbackground{
+		width: 100%;
+	}
+	
+	.indextextbox{
+		width: 80%;
+	}
+	
+	.indexlogobox{
+		margin-left: auto;
+	}
+	
+	.homebox{
+		width: 100%;
+		position: relative;
+	}
+	
+	.accountleft{
+		width: 100%;
+	}
+	
+	.accountright{
+		width: 100%;
+	}
+}
